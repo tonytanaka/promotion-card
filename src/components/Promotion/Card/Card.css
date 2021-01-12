@@ -5,6 +5,7 @@
   display: flex;
   padding: 15px;
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .promotion-card__image {
@@ -31,6 +32,7 @@
 .promotion-card__comment {
   color: #95a5a6;
   font-weight: 700;
+  max-width: 300px;
 }
 
 .promotion-card__comments-count {
