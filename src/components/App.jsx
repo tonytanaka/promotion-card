@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import PromotionCard from './Promotion/Card/Card';
+import Checkbox from './Promotion/Card/Checkbox'
 
 import '../App.css';
 
 const App = () => {
+    const [checked, setChecked] = useState({box1:false});
+    const checkboxHandler = (e) => {
+      setChecked ({...checked, [e.target.name]: e.target.checked})
+    }
 
-  const promotions = [
+const promotions = [
   {
   "id": 1,
   "title": "Lenovo Yoga Smart Tab 25,5 cm (10,1 Zoll, 1920x1200, Full HD, WideView, Touch) Tablet-PC (Octa-Core, 3GB RAM, 32GB eMMC, Wi-Fi, LTE, Android 9) grau",
@@ -72,11 +77,20 @@ const App = () => {
 }
 ]
 
+let counter = promotions.length
+
   return (
     <div className="App">
-    <h1>Top Promotions of the Day</h1>
+    <h1>Top {counter} Promotions of the Day</h1>
       {promotions.map((promotion) => 
+    <>
+      <div className={`${checked.box1 ? "app-checkbox2" : "app-checkbox"}`}>
+        <Checkbox checked={checked} checkboxHandler={checkboxHandler}/>
+        <p className="app-checkbox-p">Select this item</p>
+        
+      </div>
     <PromotionCard promotion={promotion}/>
+    </>
       )}
     </div>
   );

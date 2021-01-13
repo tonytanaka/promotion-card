@@ -8,6 +8,10 @@
   margin-bottom: 20px;
 }
 
+.promotion-card__info {
+  width: 100%;
+}
+
 .promotion-card__image {
   max-width: 100px;
   margin-right: 20px;
@@ -47,4 +51,8 @@
   color: #3498db;
   text-decoration: none;
   padding: 8px 10px;
+}
+
+.single-checkbox {
+  align-self: baseline;
 }

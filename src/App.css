@@ -2,3 +2,33 @@
   max-width: 800px;
   margin: 30px auto;
 }
+
+h1 {
+  text-align: center;
+}
+
+.app-checkbox {
+  border-radius: 8px;
+  border: 1px solid #c3c3c3;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  background-color: rgb(171, 176, 201);
+}
+
+.app-checkbox2 {
+  border-radius: 8px;
+  border: 1px solid #c3c3c3;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  background-color: rgb(224, 219, 219);
+}
+
+.app-checkbox-p {
+  margin: 0 5px;
+}
