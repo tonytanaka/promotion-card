@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PromotionCard from './Promotion/Card/Card';
 import Checkbox from './Promotion/Card/Checkbox'
 
 import '../App.css';
 
 const App = () => {
-    const [checked, setChecked] = useState({box1:false});
-    const checkboxHandler = (e) => {
-      setChecked ({...checked, [e.target.name]: e.target.checked})
-    }
+    
 
 const promotions = [
   {
@@ -84,12 +81,8 @@ let counter = promotions.length
     <h1>Top {counter} Promotions of the Day</h1>
       {promotions.map((promotion) => 
     <>
-      <div className={`${checked.box1 ? "app-checkbox2" : "app-checkbox"}`}>
-        <Checkbox checked={checked} checkboxHandler={checkboxHandler}/>
-        <p className="app-checkbox-p">Select this item</p>
-        
-      </div>
-    <PromotionCard promotion={promotion}/>
+      <Checkbox />
+      <PromotionCard promotion={promotion}/>
     </>
       )}
     </div>

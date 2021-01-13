@@ -12,7 +12,7 @@ h1 {
   border: 1px solid #c3c3c3;
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
   display: flex;
-  padding: 10px;
+  padding: 8px;
   align-items: flex-start;
   margin-bottom: 5px;
   background-color: rgb(171, 176, 201);
@@ -23,7 +23,7 @@ h1 {
   border: 1px solid #c3c3c3;
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
   display: flex;
-  padding: 10px;
+  padding: 8px;
   align-items: flex-start;
   margin-bottom: 5px;
   background-color: rgb(224, 219, 219);

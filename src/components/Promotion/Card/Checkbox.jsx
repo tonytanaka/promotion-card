@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 
-const Checkbox = ({checked, checkboxHandler}) => {
+const Checkbox = () => {
+    const [checked, setChecked] = useState({box1:true});
 
     return (
-        <section className='single-checkbox'>
+        <section className={`${checked ? "app-checkbox" : "app-checkbox2"}`}>
             <input 
-            name='box1'
+            // name='box1'
             type='checkbox'
             value={checked}
-            onChange={(e) => checkboxHandler(e)} />
+            onChange={(e) => setChecked(e.target.checked)} />
+        <p className="app-checkbox-p">Select this item</p>
         </section>
     );
 };
